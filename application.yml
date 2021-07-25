@@ -11,3 +11,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+        
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+
+server:
+  port: 0
